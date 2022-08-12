@@ -11,8 +11,11 @@ Currently, tests are covering just primary signup functionality via web form. It
 The project is written with TypeScript, Cypress, Docker, Mocha reporter.
 
 ## How to run tests
-In the root of the project execute:
-
+In the root of the project execute at first:
+```
+npm install
+```
+and then:
 ```bash
 npm test
 ```
