@@ -1,0 +1,23 @@
+# OS
+*~
+*.log
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# NPM
+node_modules/
+package-lock.json
+
+# Typescript
+*.d.ts
+*.js.map
+cypress/reports/*
+cypress/screenshots
+cypress/videos
+
+#.github
+#.github.

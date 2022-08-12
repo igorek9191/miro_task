@@ -1,0 +1,6 @@
+version: "1.0"
+services:
+  qa-auto-task:
+    container_name: qa-auto-task
+    image: 566049780/docker101tutorial:latest
+    command: "cypress run --headless --browser chrome"
