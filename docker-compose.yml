@@ -4,3 +4,8 @@ services:
     container_name: qa-auto-task
     image: 566049780/docker101tutorial:latest
     command: "cypress run --headless --browser chrome"
+
+  qa-auto-task2:
+    container_name: qa-auto-task2
+    image: 566049780/docker101tutorial:latest
+    command: "cypress run --headless --browser firefox"

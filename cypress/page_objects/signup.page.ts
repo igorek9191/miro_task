@@ -9,7 +9,7 @@ export class SignupPage {
     private signup_button:string = '[data-testid=\'mr-form-signup-btn-start-1\']'
 
     fill_name(name:string){
-        cy.get(this.name_input).type(name)
+        cy.get(this.name_input).click().type(name)
     }
 
     fill_email(email:string){

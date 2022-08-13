@@ -22,17 +22,13 @@ npm test
 
 After the execution, a Mocha report should be automatically opened in a browser.
 
-It is also possible to run tests in a Docker container. To start tests in a container execute:
+It is also possible to run tests in a Docker containers. There are 2 containers for run with chrome and firefox browsers.
+To start tests in containers execute:
 ```
 docker compose up
 ```
-After container work execute the following command to get report:
+After containers work execute the following commands to get reports:
 ```
-docker cp qa-auto-task:/custom-cypress-image/cypress/reports ./docker-report
+docker cp qa-auto-task:/custom-cypress-image/cypress/reports ./docker-chrome-report
+docker cp qa-auto-task2:/custom-cypress-image/cypress/reports ./docker-firefox-report
 ```
-
-Finally, report should be in ```/docker-report``` folder
-
-## A few final thoughts
-
-Further test coverage should include signup via third side services.
