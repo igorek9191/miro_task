@@ -4,7 +4,7 @@ This project is an implementation of a test automation task for [miro](https://m
 
 ## Test coverage
 
-Currently, tests are covering just primary signup functionality via web form. It includes positive and negative tests. Checks with non-valid fields don't include a check for the "Name" field, cause there was no possibility to clarify requirements for that field.
+Currently, tests are covering just primary signup functionality via web form. It includes positive and negative tests. Checks with non-valid fields don't include a check for the "Name" field, cause seems that this field can accept everything :)
 
 ##  Tools
 
@@ -32,3 +32,8 @@ After containers work execute the following commands to get reports:
 docker cp qa-auto-task:/custom-cypress-image/cypress/reports ./docker-chrome-report
 docker cp qa-auto-task2:/custom-cypress-image/cypress/reports ./docker-firefox-report
 ```
+
+## Couple additional thoughts
+Further test automation should include checks for signup via third sides.
+
+For firefox run in the Docker container needs to add a separate environment file as a command argument
